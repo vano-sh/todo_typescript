@@ -1,4 +1,4 @@
-import { ITodo } from 'shared/types'
+import { ITodo } from 'shared/model/types'
 import { useAppDispatch, useTodo } from 'shared/model'
 
 export const TodoItem: React.FC<ITodo> = ({ id, title, complete }) => {

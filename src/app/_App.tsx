@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
-import { useAppDispatch } from '../shared/model/hooks/_hook'
-import { addTodo } from '../shared/model/reducers/_todoSlice'
-import { TodoList } from '../components/TodoList/_TodoList'
+import { useAppDispatch, useTodo } from 'shared/model'
+import { TodoList } from 'components'
 
 export const App: React.FC = () => {
   const [value, setValue] = useState('')
+  const { addTodo } = useTodo()
 
   const inputRef = useRef<HTMLInputElement>(null)
 
