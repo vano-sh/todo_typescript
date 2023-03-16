@@ -1,8 +1,8 @@
-import { useAppSelector } from '../hook'
-import { TodoItem } from './TodoItem'
+import { useAppSelector } from 'shared/model'
+import { TodoItem } from './components'
 
 export const TodoList: React.FC = () => {
-  const { list } = useAppSelector((state) => state)
+  const { list } = useAppSelector((state) => state.todoReducer)
 
   return (
     <div>

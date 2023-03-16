@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
-import { useAppDispatch } from '../hook'
-import { addTodo } from '../store/todoSlice'
-import { TodoList } from './TodoList'
+import { useAppDispatch } from '../shared/model/hooks/_hook'
+import { addTodo } from '../shared/model/reducers/_todoSlice'
+import { TodoList } from '../components/TodoList/_TodoList'
 
 export const App: React.FC = () => {
   const [value, setValue] = useState('')

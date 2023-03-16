@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { ITodo } from '../types/data'
+import { ITodo } from '../../types/_ITodo'
 
 type TodoState = {
   list: ITodo[]
