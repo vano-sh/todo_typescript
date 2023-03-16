@@ -1,9 +1,9 @@
-import { useAppDispatch } from '../hook'
-import { removeTodo, toggleComplete } from '../store/todoSlice'
-import { ITodo } from '../types/data'
+import { ITodo } from 'shared/model/types'
+import { useAppDispatch, useTodo } from 'shared/model'
 
 export const TodoItem: React.FC<ITodo> = ({ id, title, complete }) => {
   const dispatch = useAppDispatch()
+  const { removeTodo, toggleComplete } = useTodo()
 
   const handleToggleTodoChange = (id: string) => {
     dispatch(toggleComplete(id))
