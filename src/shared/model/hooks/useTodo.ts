@@ -1,4 +1,4 @@
-import { useAppSelector } from './_hook'
+import { useAppSelector } from './hook'
 import { addTodo, removeTodo, toggleComplete } from '../reducers/_todoSlice'
 
 export const useTodo = () => {
