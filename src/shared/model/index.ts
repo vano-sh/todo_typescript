@@ -1,4 +1,4 @@
-import { useAppSelector, useAppDispatch } from './hooks/_hook'
-import { useTodo } from './hooks/_useTodo'
+import { useAppSelector, useAppDispatch } from './hooks/hook'
+import { useTodo } from './hooks/useTodo'
 
 export { useAppSelector, useAppDispatch, useTodo }

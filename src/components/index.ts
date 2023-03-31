@@ -1,3 +1,4 @@
-import { TodoList } from './TodoList/_TodoList'
+import { TodoList } from './layout/TodoList/TodoList'
+import { Sidebar } from './layout/Sidebar/Sidebar'
 
-export { TodoList }
+export { TodoList, Sidebar }
